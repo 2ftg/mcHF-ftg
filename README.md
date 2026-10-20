@@ -8,7 +8,9 @@ The mcHF is a fully open source software defined radio transceiver for the HF am
 Both hardware and firmware build on the work of many radio amateurs. The design is modular, uses mostly off-the-shelf components that can be soldered by hand, and is straightforward to repair when something goes wrong. An amateur radio licence is required to transmit.
 
 This repository is for the OH2FTG experimental fork of the 0.6.3 mcHF. Please see upstream for the original project.
+
 Thus all the work here is currently aimed at the "legacy" c6 mcHF and not newer versions.
+
 Main aim of this fork is easier sourcing and manufacturability of the design.
 
 [![mcHF demonstration video](https://img.youtube.com/vi/7Q5eKNbZNY8/0.jpg)](https://www.youtube.com/watch?v=7Q5eKNbZNY8)
@@ -27,7 +29,8 @@ Main aim of this fork is easier sourcing and manufacturability of the design.
 ## Hardware
 
 The radio is built around an STM32F437VI dual-core MCU: the Cortex-M4F (168 MHz) runs the user interface and real-time DSP (demodulation, AGC, filtering, spectrum FFT).
-Alternative MCU: [Compatible MCU's]([https://github.com/df8oe/UHSDR](https://www.amateurfunk-sulingen.de/forum/index.php?board=15;action=display;threadid=1008))
+
+Alternative MCU: [Compatible MCU's](https://www.amateurfunk-sulingen.de/forum/index.php?board=15;action=display;threadid=1008)
 
 ### Altium PCB project files
 
