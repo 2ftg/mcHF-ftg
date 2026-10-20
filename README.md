@@ -8,6 +8,7 @@ The mcHF is a fully open source software defined radio transceiver for the HF am
 Both hardware and firmware build on the work of many radio amateurs. The design is modular, uses mostly off-the-shelf components that can be soldered by hand, and is straightforward to repair when something goes wrong. An amateur radio licence is required to transmit.
 
 This repository is for the OH2FTG experimental fork of the 0.6.3 mcHF. Please see upstream for the original project.
+Thus all the work here is currently aimed at the "legacy" c6 mcHF and not newer versions.
 Main aim of this fork is easier sourcing and manufacturability of the design.
 
 [![mcHF demonstration video](https://img.youtube.com/vi/7Q5eKNbZNY8/0.jpg)](https://www.youtube.com/watch?v=7Q5eKNbZNY8)
@@ -15,19 +16,18 @@ Main aim of this fork is easier sourcing and manufacturability of the design.
 ## Features
 
 - Transmit and receive on the 3–30 MHz amateur bands
-- SSB, AM, FM and CW modes
-- FT8 and WSPR digital mode decoding (in development)
+- SSB, AM, FM, CW and FreeDV modes
+
 - Real-time spectrum scope and waterfall
-- Large 4.3" IPS LCD with capacitive touch
-- 25 W output power
-- Built-in 80 Wh lithium battery
-- Dual USB-C ports for power, charging and PC connection
-- Bluetooth stereo headphone support
-- LoRa sub-GHz auxiliary radio
+- 2.8" LCD with capacitive touch
+- 5 W output power
+- USB-C port for PC connection
+
 
 ## Hardware
 
-The radio is built around an STM32H747BIT6 dual-core MCU: the Cortex-M7 (480 MHz) runs the user interface and system control, while the Cortex-M4 handles the real-time DSP (demodulation, AGC, filtering, spectrum FFT).
+The radio is built around an STM32F437VI dual-core MCU: the Cortex-M4F (168 MHz) runs the user interface and real-time DSP (demodulation, AGC, filtering, spectrum FFT).
+Alternative MCU: [Compatible MCU's]([https://github.com/df8oe/UHSDR](https://www.amateurfunk-sulingen.de/forum/index.php?board=15;action=display;threadid=1008))
 
 ### Altium PCB project files
 
@@ -92,3 +92,4 @@ Feel free to build one yourself and contribute — bug reports, fixes and improv
 mcHF is licensed under the [GNU General Public License v3.0](LICENSE).
 
 Copyright © 2013–2026 Krassi Atanassov, M0NKA
+Modifications by Ismo Väänänen, OH2FTG
